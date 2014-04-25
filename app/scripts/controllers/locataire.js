@@ -3,7 +3,7 @@ define(['app', 'jquery'], function (app, $) {
 	return app.controller('LocataireCtrl', ['$scope',
 		function($scope){
 
-			var mapEl = $('#map');
+			var mapEl = $('#map_proprio');
 			console.log(mapEl);
 			new GoogleMap(mapEl);
 		}

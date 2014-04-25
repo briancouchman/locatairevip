@@ -51,7 +51,9 @@ require( [
 	'angular',
 	'app',
 
-	'controllers/locataire_map',
+	'controllers/main',
+	'controllers/proprietaire',
+
 	'services/loc_service',
 
 	'routes'

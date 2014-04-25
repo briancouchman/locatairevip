@@ -8,9 +8,14 @@ define(['angular', 'app'], function(angular, app) {
 			templateUrl: 'views/home.html'
 		});
 
-		$routeProvider.when('/map', {
+		/*$routeProvider.when('/map', {
 			templateUrl: 'views/map.html',
 			controller: 'LocataireMapCtrl'
+		});*/
+
+		$routeProvider.when('/espace_proprio', {
+			templateUrl: 'views/esp_prop.html',
+			controller: 'ProprietaireCtrl'
 		});
 
 		$routeProvider.otherwise({redirectTo: '/'});

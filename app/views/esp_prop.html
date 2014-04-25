@@ -1,0 +1,16 @@
+
+	<div class="row" style="height: 600px">
+	  <div class="col-md-9">
+		<div id="map_proprio" class="map"></div>
+	  </div>
+	  <div class="col-md-3">
+		<div id="list_proprio">
+			<ul class="locations">
+				<li ng-repeat="loc in locations" class="prop">
+					<div class="adress">{{loc.address}}</div>
+					<div class="price">{{loc.price}}$</div>
+				</li>
+			</ul>
+		</div>
+	  </div>
+	</div>

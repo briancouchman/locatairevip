@@ -1,4 +1,4 @@
 ECHO OFF 
-cd c:\dev\repository\locataire
+cd c:\dev\repository\locatairevip
 grunt server
 PAUSE
