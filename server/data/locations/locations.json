@@ -1,0 +1,41 @@
+[
+{
+	"id": 1,
+	"geo":{
+		"address": "6901 rue de Bordeaux, Montreal",
+		"lat": 45.547996,
+		"long": -73.601485
+	},
+	"info":{
+		"type": "5 1/2",
+		"bedrooms": 3
+	}
+},
+
+
+{
+	"id": 2,
+	"geo":{
+		"address": "7044 Rue Garnier, Montreal",
+		"lat": 45.545298,
+		"long": -73.607053
+	},
+	"info":{
+		"type": "5 1/2",
+		"bedrooms": 3
+	}
+},
+
+{
+	"id": 3,
+	"geo":{
+		"address": "3850 Jean-Talon Rue O, Montreal",
+		"lat": 45.504653,
+		"long": -73.642678
+	},
+	"info":{
+		"type": "5 1/2",
+		"bedrooms": 3
+	}
+}
+]
