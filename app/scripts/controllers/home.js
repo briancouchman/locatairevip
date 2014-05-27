@@ -1,10 +1,7 @@
-define(['app'], function (app) {
+define(['app','jquery'], function (app, $) {
 	'use strict';
 	return app.controller('HomeCtrl', ['$scope', '$location',
 		function($scope, $location){
-			console.log("Initializing Main controller");
-
-			$scope.proprioId = 1;
 
 			$scope.showProprioId = false;
 
@@ -21,5 +18,5 @@ define(['app'], function (app) {
 				$location.path('/search')
 			}
 		}
-	]);
+	])
 });

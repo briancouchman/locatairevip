@@ -5,7 +5,8 @@ define(['angular', 'app'], function(angular, app) {
 		//console.log("defining routes...");
 		
 		$routeProvider.when('/', {
-			templateUrl: 'views/home.html'
+			templateUrl: 'views/home.html',
+			controller: "HomeCtrl"
 		});
 
 		/*$routeProvider.when('/map', {
@@ -13,9 +14,14 @@ define(['angular', 'app'], function(angular, app) {
 			controller: 'LocataireMapCtrl'
 		});*/
 
-		$routeProvider.when('/espace_proprio', {
+		$routeProvider.when('/espace_proprio/:proprio_id', {
 			templateUrl: 'views/esp_prop.html',
 			controller: 'ProprietaireCtrl'
+		});
+
+		$routeProvider.when('/search/', {
+			templateUrl: 'views/search.html',
+			controller: 'SearchCtrl'
 		});
 
 		$routeProvider.otherwise({redirectTo: '/'});

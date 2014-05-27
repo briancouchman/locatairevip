@@ -1,0 +1,3 @@
+#id,propertyType,civicNumber,street,district,city,province,country,postalCode,bedroomCount,bathroomCount,floorCount,availabilityDate,monthlyRent,floorLocation,description
+13,1,6901,rue de Bordeaux,,Montreal,Quebec,Canada,H2G2S3,5,3,3,NOW,1195,1,Near a park
+14,1,2070,rue Hector,,Montreal,Quebec,Canada,J4M2W5,2,1,1,NOW,675,1,

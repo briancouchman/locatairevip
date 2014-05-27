@@ -1,12 +1,12 @@
 
 	<div id="locationList" class="row" style="height: 600px">
 	  <div class="col-md-9">
-		<div id="map_proprio" class="map"></div>
+		<div id="map_search" class="map"></div>
 	  </div>
 	  <div class="col-md-3">
-		<div id="list_proprio">
+		<div id="list">
 			<ul class="locations" )>
-				<li ng-repeat="loc in locations" class="prop dynamic" ng-click="selectLocation(loc.id)">
+				<li ng-repeat="loc in locations" class="loc dynamic" ng-click="selectLocation(loc.id)">
 					<div class="price">{{loc.monthlyRent}}$</div>
 					<div class="type">{{loc.propertyType}}</div>
 					<div class="address">{{loc.address.civicNumber}} {{loc.address.streetName}}</div>
@@ -17,7 +17,7 @@
 	</div>
 
 
-	<div id="locationDetails" ng-show="locationSelected" style="height: 300px" class="prop panel">
+	<div id="locationDetails" ng-show="locationSelected" style="height: 300px" class="loc panel">
 	  <div class="panel-heading"><button type="button" class="close" ng-click="locationSelected = false" aria-hidden="true">&times;</button><h3>{{locationSelected.monthlyRent}}$</h3></div>
 	  <div class="panel-body">
 			<div class="row" >

@@ -51,10 +51,13 @@ require( [
 	'angular',
 	'app',
 
-	'controllers/main',
-	'controllers/proprietaire',
+	'services/locationService',
+	'services/mapService',
 
-	'services/loc_service',
+	'controllers/home',
+	'controllers/proprietaire',
+	'controllers/search',
+
 
 	'routes'
 ], function(angular, app, routes, locService) {
