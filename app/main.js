@@ -9,11 +9,9 @@ require.config({
 		'async' : '../bower_components/requirejs-plugins/src/async',
 		'GoogleMap' : '../bower_components/requirejs-google-maps/dist/GoogleMap',
 		'gmaps': '../bower_components/gmaps/gmaps-amd',
-		'mapCluster': '../bower_components/gmaps/markerclusterer',
 		'jqplot' : '../jqplot.module',
 		'bootstrap' : '../bower_components/bootstrap/dist/js/bootstrap',
 		'd3' : '../bower_components/d3/d3.min',
-		'typeahead' : '../bower_components/typeahead.js/dist/typeahead',
 		'facebook': '//connect.facebook.net/en_US/all'
 	},
 	shim: {
@@ -32,14 +30,9 @@ require.config({
 			'exports':'bootstrap'
 		},
 		'gmaps': {
-			deps: ['mapCluster'],
 			'exports':'gmaps'
 		},
 		'd3': { 'exports': 'd3'},
-		'typeahead': {
-			deps: ['jquery'],
-			'exports':'typeahead'
-		},
 		'facebook' : {'exports': 'FB'}
 	},
 	priority: [
@@ -49,6 +42,7 @@ require.config({
 
 require( [
 	'angular',
+	'angularRoute',
 	'app',
 
 	'services/locationService',
@@ -66,6 +60,6 @@ require( [
 });
 
 
-require( ['bootstrap', 'typeahead'], function(){});
+require( ['bootstrap'], function(){});
 
 //require(['facebook']);
